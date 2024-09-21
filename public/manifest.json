@@ -1,0 +1,10 @@
+{
+  "name": "cext",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "A simple extension",
+  "action": {
+    "default_popup": "popup/index.html"
+  },
+  "permissions": ["scripting", "activeTab"]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "chrome-extension-template",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build --config vite.config.ts && vite build --config vite-content-scripts.config.ts && vite build --config vite-background.config.ts",
+    "fmt": "dprint fmt && sort-package-json && biome check --write .",
+    "lint": "dprint check && sort-package-json --check && biome lint ."
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.2",
+    "@types/chrome": "^0.0.271",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "globals": "^15.9.0",
+    "sort-package-json": "2.10.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  }
+}
